@@ -30,6 +30,7 @@ export default function RootLayout({
     { href: "/about", title: "About" },
     { href: "/projects", title: "Projects" },
     { href: "/blog", title: "Blog" },
+    { href: "/books", title: "Books" },
   ];
 
   return (
@@ -37,9 +38,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="bg-rose-500 text-white mb-5 p-5">
+        <header className="bg-rose-500 text-white mb-5 p-5 flex flex-col items-center">
           <h1 className="mb-5">
-            <Link href={"/"}>This is the Header</Link>
+            <Link href={"/"} className="font-bold text-3xl">This is the Header</Link>
           </h1>
           <ul className="flex gap-4">
             {navItems.map((item, index) => (
