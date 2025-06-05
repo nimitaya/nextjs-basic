@@ -22,7 +22,7 @@ const AllBooksPage = async () => {
           {booksResponse.map((book) => (
             <li
               key={book._id}
-              className="border p-4 rounded-lg shadow-md flex space-between items-center gap-2"
+              className="border p-4 rounded-lg shadow-md flex justify-between items-center gap-2"
             >
               <div>
                 <h2 className="text-xl font-semibold">{book.title}</h2>
